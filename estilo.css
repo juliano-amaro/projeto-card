@@ -1,0 +1,188 @@
+/* DOCUMENTO CSS - Projeto CARD */
+
+@font-face {
+
+     font-family: pokemonhollow;
+     src: url(pokemon\ hollow.ttf);
+
+}
+
+/* Essa função adiciona novas fontes de letra */
+@font-face {
+
+    font-family: pokemonsolid;
+    src: url(pokemon\ solid.ttf);
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Lucida Sans';
+    color: black;
+    background-image: url(imagem\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body h1 {
+
+    font-family: pokemonsolid;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 45px;
+    justify-content: center;
+    border-radius: 15px;
+    color: yellow;
+    -webkit-text-stroke: 1.5px blue;
+    letter-spacing: 1.5px;
+    
+}
+
+#topo {
+
+    height: 150px;
+}
+
+#conteudo {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    background-color: rgb(0, 0, 0, 0.7);
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+#conteudo a {
+    text-decoration: none;
+    color:black;
+}
+
+/* Meche nos cards em geral */
+.card {
+
+    width: 250px;
+    height: 315px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    background-color: azure;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.5s;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.card:hover {
+
+    width: 350px;
+    height: auto;
+
+}
+
+/* meche na imagem */
+.card figure {
+
+    width: 230px;
+    height: 290px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 10px;
+
+}
+
+.card figure img {
+    width: 100%;
+}
+
+.card h2 {
+
+    font-family: pokemonsolid;
+    font-size: 20px;
+    margin-top: -10px;
+    color: yellow;
+    -webkit-text-stroke: 1px blue;
+    letter-spacing: 1.5px;
+
+}
+
+.card p {
+    
+    font-family: 'Segoe UI';
+    text-overflow: clip;
+    margin-top: -10px;
+    padding-bottom: 15px;
+
+}
+
+.descricao {
+
+    display: inline-block;
+    position: relative;
+    white-space: inherit;
+    border: 3px solid black;
+    margin-top: 5px;
+    padding-top: 2%;
+    padding: -5px;
+    background-image: linear-gradient(to top, orangered, orange);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px black;
+ 
+}
+
+.descricao h3 {
+
+    padding-top: -5px;
+    padding-bottom: 10px;
+    padding: 2%;
+    border-bottom: 3px solid black;
+    margin: 10px;
+    font-size: 30px;
+
+}
+
+.descricao p {
+
+    padding: 10px;
+    font-family: Arial;
+    padding-bottom: 20px;
+    
+}
+
+#rodape {
+
+    background-color: orangered;
+    height: 100px;
+    color: white;
+
+}
+
+/* Meche no texto do roda pé */
+#rodape p {
+
+    text-align: center;
+    padding-top: 45px;
+    
+}
+
